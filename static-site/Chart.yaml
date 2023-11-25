@@ -1,0 +1,7 @@
+apiVersion: v2
+name: static-site
+description: A Helm chart to maintain a static site from git, on secured Apache 
+type: application
+version: 0.1.0
+appVersion: "2.0.0"
+icon: https://musings.thruhere.net/images/QSolutionsApplications.svg
