@@ -2,9 +2,9 @@
 
 [![Hosted By: Cloudsmith](https://img.shields.io/badge/OSS%20hosting%20by-cloudsmith-blue?logo=cloudsmith&style=for-the-badge)](https://cloudsmith.com)
 
-Hardened Apache Web Server with git-sync, and LetsEncrypt certificate
+This is a Helm Chart for a hardened Apache Web Server with content sync with a GitHub repository, and https certificate sourced from LetsEncrypt.
 
-This Helm Chart contains the following resources:
+The Helm Chart contains the following resources:
 
 - clusterissuer.yaml: Set the `issuer` definition in values.yaml
 - certificate.yaml: Set the `certificate` definition in values.yaml
