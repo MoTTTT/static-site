@@ -1,0 +1,30 @@
+replicaCount: 1
+image:
+  repository: linuxserver/ddclient
+  pullPolicy: IfNotPresent
+  tag: "latest"
+  args: []
+#  args:
+#    - f /etc/ddclient/ddclient.conf
+nameOverride: ""
+fullnameOverride: ""
+configmap:
+  name: ddclient.conf
+autoscaling:
+  enabled: false
+  minReplicas: 1
+  maxReplicas: 100
+  targetCPUUtilizationPercentage: 80
+volumes:
+  - name: ddclient-config-file
+    secret:
+      secretName: ddclient.conf
+#  - name: ddclient-cache
+#    emptyDir: {}
+volumeMounts:
+#  - mountPath: /config
+#    name: ddclient-cache
+  - mountPath: /config
+    name: ddclient-config-file
+#    subpath: ddclient.conf
+

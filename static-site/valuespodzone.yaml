@@ -21,6 +21,6 @@ ingress:
   tls:
     - secretName: podzone-cert
       hosts:
-        - docs.podzone.net
+        - docs.podzone.net 
 test:
   url: "https://docs.podzone.net/index.html"
