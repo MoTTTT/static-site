@@ -21,3 +21,11 @@ Cloudsmith is the only fully hosted, cloud-native, universal package management 
 enables your organization to create, store and share packages in any format, to any place, with total
 confidence.
 ```
+
+## GitHub pages and ArtefactHUB
+
+For more control - specifically to manage the index.yaml file, a new gitHub repo was created for podzone charts, with a gitHub Pages site publishing the index and chart artefacts.
+
+- Github Pages: <https://motttt.github.io/charts/>
+- Github Pages Index: <https://motttt.github.io/charts/index.yaml>
+- ArtefactHUB: <https://artifacthub.io/packages/search?user=MoTTTT>
